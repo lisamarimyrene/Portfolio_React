@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@400;700&display=swap');
+/* 'Fahkwang', sans-serif; */
+/* 'Roboto', sans-serif; */
+:root {
+    --background: #F1F0EB;
+    --font: #524640;
+    --brown: #7B655A;
+    --yellow: #FAC984;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--background);
+    color: var(--font);
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+
+}
+h1,
+h2,
+h3 {
+    font-family: 'Fahkwang', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}

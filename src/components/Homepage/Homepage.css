@@ -1,0 +1,12 @@
+h2 {
+    margin: 2.5vh 0 0 5vh;
+}
+#main__h2--portfolio {
+    margin-bottom: 4vh;
+}
+
+@media screen and (min-width: 470px) {
+    main {
+        margin-left: 5vw;
+    }
+}

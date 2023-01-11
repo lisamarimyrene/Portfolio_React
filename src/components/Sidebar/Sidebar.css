@@ -1,0 +1,48 @@
+.sidebar {
+    display: none;
+}
+@media screen and (min-width: 470px) {
+    .sidebar {
+        display: block;
+        position: fixed;
+        background-color: var(--brown);
+        height: 100vh;
+        width: 5vw;
+    }
+
+    .sidebar__flexcontainer--desktop {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .sidebar__icons {
+        text-align: center;
+        padding-top: 5vh;
+    }
+    .sidebar__icons--icon {
+        fill: var(--background);
+        fill-rule: evenodd;
+        clip-rule: evenodd;
+        width: 2vw;
+        padding-right: 0.5em;
+        font-weight: 100;
+        padding-bottom: 2vh;
+    }
+    .sidebar__icons--icon:hover {
+        fill: var(--yellow);
+        cursor: pointer;
+    }
+    .sidebar__verticaltxt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5vh;
+    }
+    .sidebar__verticaltxt > p {
+        font-family: 'Fahkwang', sans-serif;
+        color: var(--background);
+        font-weight: 600;
+        margin-bottom: -0.7vh;
+    }
+}

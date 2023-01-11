@@ -1,0 +1,125 @@
+.skills__desktop--hr, 
+#section__skills--desktop {
+    display: none;
+}
+.section__skills--mobile {
+    background-color: var(--yellow);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+.section__skills--mobile > h2 {
+    padding-top: 2.5vh;
+}
+
+.skills__frontend,
+.skills__backend,
+.skills__programs {
+    margin: 5vh auto 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 41vw;
+}
+.skills__frontend > p,
+.skills__backend > p,
+.skills__programs > p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    line-height: 120%;
+}
+.skills__frontend > h3,
+.skills__backend > h3,
+.skills__programs > h3 {
+    padding-bottom: 1.5vh;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 470px) {
+    .skills__desktop--hr {
+        display: block;
+        background-color: var(--yellow);
+        height: 0.2vh;
+        border: none;
+    }
+
+    #main__h2--portfolio, .section__skills--mobile {
+        display: none;
+    }
+
+    #section__projects > h2,
+    #section__about > h2 {
+        padding-top: 4vh;
+        padding-left: 2.5vw;
+    }
+
+    #section__skills--desktop {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .skills__desktop--left {
+        background-color: var(--yellow);
+        width: 50vw;
+        height: 100vh;
+    }
+    .skills__desktop--left > h2 {
+        padding-top: 4vh;
+        padding-left: 2.5vw;
+    }
+
+    .desktop__left--arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+    }
+    .desktop__left--arrow > img {
+        width: 30vw;
+        animation: arrowmove 10s normal;
+    }
+        
+    .skills__desktop--right {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--background);
+        width: 50vw;
+        justify-content: center;
+    }
+    
+    .skills__desktop--hr {
+        color: var(--yellow);
+        display: block;
+        width: 80vw;
+    }
+
+    .skills__frontend,
+    .skills__backend,
+    .skills__programs {
+        margin: 6vh auto 0 auto;
+        width: 11vw;
+    }
+    .skills__frontend > h3,
+    .skills__backend > h3,
+    .skills__programs > h3 {
+        font-size: 1.2em;
+        padding-left: 0;
+    }
+
+    .skills__frontend > p,
+    .skills__backend > p,
+    .skills__programs > p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1em;
+        padding-top: 0.3vh;
+    }
+
+    .skills__frontend > p:last-of-type,
+    .skills__backend > p:last-of-type,
+    .skills__programs > p:last-of-type {
+        padding-bottom: 2vh;
+    }    
+    
+}
